@@ -53,7 +53,7 @@ export default function UserBlog() {
 
     const blogDelete = async(id)=>{
       try {
-       let data = await fetch(`/blogs/${id}`,{
+       let data = await fetch(`https://blog-1103.herokuapp.com/blogs/${id}`,{
         method:"DELETE",
         headers:{
           authorization: localStorage.getItem('token')
