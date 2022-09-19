@@ -16,7 +16,7 @@ export default function Home() {
 
   const getBlogs = async () => {
     try {
-      let data = await fetch('/getBlogs')
+      let data = await fetch('https://blog-1103.herokuapp.com/getBlogs')
       data = await data.json();
       setLoading(true)
       setBlogs(data) 
