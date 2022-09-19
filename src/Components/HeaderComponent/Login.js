@@ -44,7 +44,7 @@ export default function Login() {
       }
 
       else{
-      let data= await fetch( "https://blog-1103.herokuapp.com/login",{
+      let data= await fetch( "http://localhost:4000/login",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",

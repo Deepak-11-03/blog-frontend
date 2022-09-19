@@ -54,7 +54,7 @@ const handleInput =(e)=>{
           closeError()
         }
         else{
-            let data= await fetch( "https://blog-1103.herokuapp.com/register",{
+            let data= await fetch( "http://localhost:4000/register",{
                 mode:'cors',
                 method: "POST",
                 headers: {
