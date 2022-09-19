@@ -52,7 +52,7 @@ export default function Blogupload() {
         formData.append('category',category)
         formData.append('authorName',user)
 
-        let data = await fetch('/addBlog',{
+        let data = await fetch('https://blog-1103.herokuapp.com/addBlog',{
           mode:'cors',
           method:"POST",
           headers:{

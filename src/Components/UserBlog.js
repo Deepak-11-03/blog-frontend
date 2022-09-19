@@ -23,7 +23,7 @@ export default function UserBlog() {
   
     const userBlogs = async () => {
       try {
-        let data = await fetch('/blogs',{
+        let data = await fetch('https://blog-1103.herokuapp.com/blogs',{
           headers:{
             authorization: localStorage.getItem('token')
             }
