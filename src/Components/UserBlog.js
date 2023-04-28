@@ -61,7 +61,7 @@ export default function UserBlog() {
 
     const blogDelete = async(id)=>{
       try {
-       let data = await fetch(`http://localhost:4000/blogs/${id}`,{
+       let data = await fetch(`https://blogenix.onrender.com/blogs/${id}`,{
         method:"DELETE",
         headers:{
           authorization: localStorage.getItem('token')
